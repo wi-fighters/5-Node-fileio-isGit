@@ -37,33 +37,40 @@ In the file `index.js` accept at least one command line argument from the user, 
 
 ```bash
 $ node index.js ../blockly-vue
-> /home/itamar/blockly-vue is a git repository
+> "/home/itamar/blockly-vue is a git repository"
 ```
 
 ##### Directory is not a git repository
 
 ```bash
 $ node index.js ../blockly-vue/src
-> /home/itamar/blockly-vue/src is **not** a git repository
+> "/home/itamar/blockly-vue/src is **not** a git repository"
 ```
 
 ##### Directory doesn't exist
 
 ```bash
 $ node index.js ../hello
-> Sorry, but I couldn't find a directory at /home/itamar/hello
+> "Sorry, but I couldn't find a directory at /home/itamar/hello"
+```
+
+##### No arguments passed
+
+```bash
+$ node index.js
+> "Please pass in at least one directory path to check for git repositories"
 ```
 
 ##### Multiple Arguments
 
 ```bash
 $ node index.js ../blockly-vue ../blockly-vue/src
-> /home/itamar/blockly-vue is a git repository
-> /home/itamar/blockly-vue/src is **not** a git repository
+> "/home/itamar/blockly-vue is a git repository"
+> "/home/itamar/blockly-vue/src is **not** a git repository"
 ```
 
 ### Bonus tasks
 
-* Use the exernal library [`chalk`](https://www.npmjs.com/package/chalk) to add some color to your output.
+* Use the external library [`chalk`](https://www.npmjs.com/package/chalk) to add some color to your output.
 * Link the npm package globally so that you could use the program anywhere in the terminal by calling `is-git <directory>`.
 * Publish the program as an npm package under your user namespace.
