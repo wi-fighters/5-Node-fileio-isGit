@@ -71,6 +71,6 @@ $ node index.js ../blockly-vue ../blockly-vue/src
 
 ### Bonus tasks
 
-* Use the exernal library [`chalk`](https://www.npmjs.com/package/chalk) to add some color to your output.
+* Use the external library [`chalk`](https://www.npmjs.com/package/chalk) to add some color to your output.
 * Link the npm package globally so that you could use the program anywhere in the terminal by calling `is-git <directory>`.
 * Publish the program as an npm package under your user namespace.
